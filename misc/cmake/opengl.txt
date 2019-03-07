@@ -1,0 +1,33 @@
+##
+## Provide OpenGL support
+##
+
+#
+# Check for opengl32
+#
+
+if( NOT UNIX )
+   REQUIRE_LIBRARY( OPENGL32 opengl32 1 )
+endif( NOT UNIX )
+
+#
+# Check for freeglut
+#
+
+REQUIRE_LIBRARY( FREEGLUT glut 1 )
+
+#
+# Check for glew
+#
+
+if( UNIX )
+   REQUIRE_LIBRARY( GLEW GLEW 1 )
+else( UNIX )
+   REQUIRE_LIBRARY( GLEW glew32 1 )
+endif( UNIX )
+
+#
+# Set libraries
+#
+
+set( OPENGL_LIBRARIES "${LIBOPENGL32_LIBRARIES};${LIBFREEGLUT_LIBRARIES};${LIBGLEW_LIBRARIES};" )

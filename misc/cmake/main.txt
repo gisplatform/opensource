@@ -1,0 +1,21 @@
+##
+## Set default build flags
+##
+
+# Set compiler flags
+if( CMAKE_COMPILER_IS_GNUCC )
+  set( CMAKE_C_FLAGS_RELEASE "-O2 -Wall" )
+  set( CMAKE_C_FLAGS_DEBUG "-g -Wall" )
+else( CMAKE_COMPILER_IS_GNUCC )
+  message( FATAL_ERROR "Unsupported compiler" )
+endif( CMAKE_COMPILER_IS_GNUCC )
+
+# Set default build type
+if( NOT CMAKE_BUILD_TYPE )
+  set( CMAKE_BUILD_TYPE Release )
+endif( NOT CMAKE_BUILD_TYPE )
+
+# Additional include directories for win32
+if( WIN32 )
+  include_directories( $ENV{INCLUDE} )
+endif( WIN32 )

@@ -1,0 +1,197 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-09 08:55+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: gp-rpc-common.c
+msgid "Wrong RPC header size"
+msgstr "Неверный размер RPC-заголовка"
+
+#: gp-rpc-common.c
+msgid "Unknown RPC packet"
+msgstr "Неизвестный RPC-пакет"
+
+#: gp-rpc-common.c
+msgid "Wrong RPC data size"
+msgstr "Неверный размер данных RPC"
+
+#: gp-rpc-common.c
+msgid "RPC sequence mismatch"
+msgstr "Нарушена последовательность RPC"
+
+#: gp-rpc-common.c
+msgid "received"
+msgstr "получено"
+
+#: gp-rpc-common.c
+msgid "needed"
+msgstr "требуется"
+
+#: gp-rpc-common.c
+msgid "RPC data buffer error"
+msgstr "Ощибка буфера данных RPC"
+
+#: gp-rpc-common.c
+msgid "PRPC version mismatch"
+msgstr "Несовпадение версии RPC"
+
+#: gp-rpc-common.c
+msgid "client version"
+msgstr "версия клиента"
+
+#: gp-rpc-common.c
+msgid "server version"
+msgstr "версия сервера"
+
+#: gp-rpc-common.c
+msgid "RPC authentication method not supported"
+msgstr "Метод аутентификации RPC не поддерживается"
+
+#: gp-rpc-common.c
+msgid "RPC client was not authenticated"
+msgstr "RPC-клиент не был аутентифицирован"
+
+#: gp-rpc-common.c
+msgid "RPC Access denied"
+msgstr "Запрещен доступ по RPC"
+
+#: gp-rpc-common.c
+msgid "Unknown RPC procedure"
+msgstr "Неизвестная RPC-процедура"
+
+#: gp-rpc-common.c
+msgid "Unknown RPC object"
+msgstr "Неизвестный RPC-объект"
+
+#: gp-rpc-server.c gp-rpc.c
+msgid "Failed to determine protocol from URI."
+msgstr "Не удалось определить протокол по URI."
+
+#: srpc-server.c trpc-server.c urpc-server.c
+msgid "Internal RPC auth parameter error."
+msgstr "Внутренняя ошибка параметра аутентификации RPC."
+
+#: srpc-server.c trpc-server.c urpc-server.c
+msgid "Internal RPC manager parameter error."
+msgstr "Внутренняя ошибка параметра менеджера RPC."
+
+#: srpc-server.c trpc-server.c urpc-server.c
+msgid "Failed to find protocol name in URI."
+msgstr "Не удалось найти название протокола в URI."
+
+#: srpc-server.c
+msgid "Failed to create RPC control object."
+msgstr "Не удалось создать управляющий объект RPC"
+
+#: srpc-server.c trpc-server.c urpc-server.c
+msgid "Failed to create RPC server: "
+msgstr "Не удалось создать RPC-сервер: "
+
+#: srpc.c
+msgid "Failed to create RPC client"
+msgstr "Не удалось создать RPC-клиента"
+
+#: srpc.c
+msgid "RPC stop semaphore error."
+msgstr "Ощибка стоп-семафора RPC."
+
+#: srpc.c trpc.c urpc.c
+msgid "Check of RPC header failed: "
+msgstr "Провалена проверка RPC-заголовка: "
+
+#: srpc.c trpc.c urpc.c
+msgid "RPC client is not connected."
+msgstr "RPC-клиент не подключен."
+
+#: srpc.c trpc.c urpc.c
+msgid "Can't authenticate."
+msgstr "Невозможно аутентифицировать."
+
+#: srpc.c trpc.c urpc.c
+msgid "Can't execute RPC request: "
+msgstr "Не удалось выполнить RPC-запрос: "
+
+#: srpc.c trpc.c urpc.c
+msgid "Authentication failed."
+msgstr "Не удалась аутентификация."
+
+#: trpc-server.c urpc-server.c
+msgid "Failed to get IP port from URI."
+msgstr "Не удалось определить IP-порт по адресу."
+
+#: trpc-server.c
+msgid "RPC control thread failed."
+msgstr "Ошибка управляющего потока RPC."
+
+#: trpc.c urpc.c
+msgid "Wrong internal auth object."
+msgstr "Некорректный внутренний объект аутентификации."
+
+#: trpc.c
+msgid "URI type is not TCP."
+msgstr "Адрес не является TCP-адресом."
+
+#: trpc.c urpc.c
+msgid "Fail to get address and port from URI."
+msgstr "Не удалось определить IP-адрес и порт по адресу."
+
+#: trpc.c urpc.c
+msgid "Failed to lock RPC."
+msgstr "Блокировка RPC не удалась."
+
+#: trpc.c urpc.c
+msgid "Authentication required."
+msgstr "Требуется аутентификация."
+
+#: trpc.c
+msgid "Failed to send RPC data: "
+msgstr "Не удалось отправить данные RPC: "
+
+#: trpc.c
+msgid "RPC data send timeout."
+msgstr "Истек период ожидания отправки данных RPC."
+
+#: trpc.c
+msgid "Failed to receive RPC header: "
+msgstr "Не удалось принять RPC-заголовок: "
+
+#: trpc.c
+msgid "RPC header receive timeout."
+msgstr "Истек период ожидания приема RPC-заголовка."
+
+#: trpc.c
+msgid "RPC response too large."
+msgstr "Ответ RPC слишком большой."
+
+#: trpc.c
+msgid "Failed to receive RPC data: "
+msgstr "Не удалось принять RPC-данные: "
+
+#: trpc.c
+msgid "RPC data receive timeout."
+msgstr "Истек период ожидания приема RPC-данных."
+
+#: urpc-server.c
+msgid "Failed to get IP address from URI."
+msgstr "Не удалось определить IP-адрес по адресу."
+
+#: urpc.c
+msgid "URI type is not UDP."
+msgstr "Адрес не является UDP-адресом."
+
+#: urpc.c
+msgid "Socket send failed: "
+msgstr "Не удалась отправка через сокет: "
+
+#: urpc.c
+msgid "Socket receive failed: "
+msgstr "Не удался прием из сокета: "

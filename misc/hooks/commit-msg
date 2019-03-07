@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# Based on Gilad Peleg's file:
+# https://gist.github.com/pgilad/5d7e4db725a906bd7aa7#file-commit-msg-sh
+
+# regex to validate in commit msg
+commit_regex='^\[[acp][\+\*\-]\]\ [A-ZА-Я0-9].*[a-zа-яA-ZА-Я0-9]\.$|^Merge'
+error_msg="Aborting commit. Your commit message must match regexp '"$commit_regex"'."
+
+if ! grep -qE "$commit_regex" "$1"; then
+    echo "$error_msg" >&2
+    exit 1
+fi

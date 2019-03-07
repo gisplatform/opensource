@@ -1,0 +1,321 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-20 09:45+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: Filter.vala
+msgid "<no_name>"
+msgstr ""
+
+#: Filter.vala
+msgid "<no_hint>"
+msgstr ""
+
+#: Ladle.vala
+#: Ladle.vala
+msgid "No data in conncetion."
+msgstr ""
+
+#: Point.vala
+msgid "WGS-84"
+msgstr ""
+
+#: Point.vala
+msgid "PZ-90"
+msgstr ""
+
+#: Point.vala
+msgid "CK-42"
+msgstr ""
+
+#: Point.vala
+msgid "UTM"
+msgstr ""
+
+#: Point.vala
+msgid "Gauss-Kruger"
+msgstr ""
+
+#: Point.vala
+msgid "CK-42 Gauss-Kruger"
+msgstr ""
+
+#: Point.vala
+msgid "Unknown system"
+msgstr ""
+
+#: ActivityButton.vala
+msgid "No activities"
+msgstr ""
+
+#: ActivityButton.vala
+msgid "Cancel"
+msgstr ""
+
+#: TreeExport.vala
+msgid "Select file export to"
+msgstr ""
+
+#: TreeExport.vala
+msgid "_Cancel"
+msgstr ""
+
+#: TreeExport.vala
+msgid "_Export"
+msgstr ""
+
+#: TreeExport.vala
+msgid "new_file.txt"
+msgstr ""
+
+#: TreeExport.vala
+msgid "File format"
+msgstr ""
+
+#: TreeExport.vala
+msgid "Separator between columns: "
+msgstr ""
+
+#: TreeExport.vala
+msgid "Add columns names"
+msgstr ""
+
+#: TreeExport.vala
+msgid "File already exists, overwrite it?"
+msgstr ""
+
+#: TreeExport.vala
+msgid "Data has been successfully exported to file "
+msgstr ""
+
+#: TreeExport.vala
+msgid "Export to file"
+msgstr ""
+
+#: Palette.vala
+msgid "Custom scale"
+msgstr ""
+
+#: Palette.vala
+msgid "Rainbow scale"
+msgstr ""
+
+#: Palette.vala
+msgid "Gray scale"
+msgstr ""
+
+#: Palette.vala
+msgid "Bronze scale"
+msgstr ""
+
+#: Palette.vala
+msgid "Use fixed scale"
+msgstr ""
+
+#: Palette.vala
+msgid "Blue scale"
+msgstr ""
+
+#: Palette.vala
+msgid "Unknown Scale"
+msgstr ""
+
+#: Palette.vala
+#: Palette.vala
+#: Palette.vala
+msgid "Scale"
+msgstr ""
+
+#: Palette.vala
+msgid " for "
+msgstr ""
+
+#: Palette.vala
+#: Palette.vala
+msgid "Continuous scale"
+msgstr ""
+
+#: Palette.vala
+msgid "Apply"
+msgstr ""
+
+#: Palette.vala
+msgid "Limits"
+msgstr ""
+
+#: Palette.vala
+msgid "Use auto min-max"
+msgstr ""
+
+#: Palette.vala
+#: Palette.vala
+msgid "Select source"
+msgstr ""
+
+#: Palette.vala
+msgid "Color limits (%)"
+msgstr ""
+
+#: Palette.vala
+msgid "Calibration"
+msgstr ""
+
+#: Palette.vala
+msgid "Palette in use"
+msgstr ""
+
+#: StackFilterBox.vala
+msgid "Auto"
+msgstr ""
+
+#: StackFilterBox.vala
+msgid "Manual"
+msgstr ""
+
+#: StackFilterBox.vala
+msgid "Add Filter"
+msgstr ""
+
+#: Connector.vala
+#: landle_client.vala
+msgid "Connect"
+msgstr ""
+
+#: Connector.vala
+#: Connector.vala
+#: Connector.vala
+msgid "Bookmark"
+msgstr ""
+
+#: Connector.vala
+#: Connector.vala
+#: Connector.vala
+#: landle_server.vala
+msgid "Address"
+msgstr ""
+
+#: Connector.vala
+msgid "Description"
+msgstr ""
+
+#: Connector.vala
+msgid "Found"
+msgstr ""
+
+#: Connector.vala
+msgid "Recent"
+msgstr ""
+
+#: Connector.vala
+msgid "Saved"
+msgstr ""
+
+#: Connector.vala
+msgid "_Save"
+msgstr ""
+
+#: spinner.c
+msgid "Play"
+msgstr ""
+
+#: spinner.c
+msgid "Stop"
+msgstr ""
+
+#: landle_client.vala
+msgid "Client"
+msgstr ""
+
+#: landle_client.vala
+msgid "Conncetion (host address : port):"
+msgstr ""
+
+#: landle_client.vala
+#: landle_server.vala
+msgid "Message to send"
+msgstr ""
+
+#: landle_client.vala
+#: landle_server.vala
+msgid "compress it"
+msgstr ""
+
+#: landle_client.vala
+#: landle_server.vala
+msgid "Send message"
+msgstr ""
+
+#: landle_client.vala
+#: landle_server.vala
+msgid "Log of received messages:"
+msgstr ""
+
+#: landle_client.vala
+msgid "File with embedded data"
+msgstr ""
+
+#: landle_client.vala
+msgid "has been created."
+msgstr ""
+
+#: landle_client.vala
+msgid "Open it?"
+msgstr ""
+
+#: landle_client.vala
+#: landle_client.vala
+msgid "Not connected to server."
+msgstr ""
+
+#: landle_client.vala
+#: landle_client.vala
+#: landle_server.vala
+#: landle_server.vala
+msgid "Received string is not null-terminated"
+msgstr ""
+
+#: landle_client.vala
+#: landle_client.vala
+#: landle_server.vala
+#: landle_server.vala
+msgid "Empty message"
+msgstr ""
+
+#: landle_server.vala
+msgid "Server"
+msgstr ""
+
+#: landle_server.vala
+msgid "Port:"
+msgstr ""
+
+#: landle_server.vala
+msgid "Start/stop server"
+msgstr ""
+
+#: landle_server.vala
+msgid "Connected clients:"
+msgstr ""
+
+#: landle_server.vala
+msgid "Connection time"
+msgstr ""
+
+#: landle_server.vala
+#, c-format
+msgid "Client '%s' disconnected with error: %s"
+msgstr ""

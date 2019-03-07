@@ -1,0 +1,15 @@
+##
+## In this file GStreamer-fft-0.10 libraries are checked
+##
+
+# Check for GSTFFT0_10
+pkg_check_modules( GSTFFT0_10 REQUIRED gstreamer-fft-0.10 )
+if( NOT GSTFFT0_10_FOUND )
+   return()
+endif( NOT GSTFFT0_10_FOUND )
+
+#Add compiler flags
+add_definitions( ${GSTFFT0_10_CFLAGS} )
+add_definitions( ${GSTFFT0_10_CFLAGS_OTHER} )
+
+link_directories( ${GSTFFT0_10_LIBRARY_DIRS} )

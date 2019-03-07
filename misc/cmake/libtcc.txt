@@ -1,0 +1,19 @@
+##
+## Provide libtcc support
+##
+
+# Check for libtcc
+message( STATUS "checking for library libtcc" )
+find_library( LIBTCC tcc )
+if( "${LIBTCC}" STREQUAL "LIBTCC-NOTFOUND" )
+	message( SEND_ERROR "libtcc not found" )
+	return()
+else ("${LIBTCC}" STREQUAL "LIBTCC-NOTFOUND" )
+	message( STATUS "checking for library libtcc - ${LIBTCC}" )
+endif( "${LIBTCC}" STREQUAL "LIBTCC-NOTFOUND" )
+
+#Add include dirs
+include_directories( ${LIBTCC_INCLUDE_DIRS} )
+
+#Add link dirs
+link_directories( ${LIBTCC_LIBRARY_DIRS} )

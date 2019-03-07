@@ -1,0 +1,14 @@
+steady-heart.wav:
+Author: Benboncan, Attribution 3.0 Unported (CC BY 3.0),
+https://freesound.org/people/Benboncan/sounds/63832/ ,
+duration is reduced and reduced to mono
+
+wine-glass.wav:
+Author: straget, Attribution 3.0 Unported (CC BY 3.0),
+https://freesound.org/people/straget/sounds/419503/ ,
+duration is reduced and reduced to mono
+
+lebaston-click.wav:
+Author: lebaston100, Attribution 3.0 Unported (CC BY 3.0),
+https://freesound.org/people/lebaston100/sounds/192272/
+duration is reduced and reduced to mono

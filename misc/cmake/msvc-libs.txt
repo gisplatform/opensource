@@ -1,0 +1,37 @@
+##
+## Define macro generating MSVC lib files
+##
+
+# 
+# Find programs that will generate *.def and *.lib files
+#
+find_program( PEXPORTS_BIN pexports )
+find_program( LIB_BIN lib )
+
+#
+# Check whether the programs were found
+#
+
+if( ${PEXPORTS_BIN} STREQUAL "PEXPORTS_BIN-NOTFOUND" )
+   message( SEND_ERROR "MSVC libs : pexports.exe not found" )
+endif( ${PEXPORTS_BIN} STREQUAL "PEXPORTS_BIN-NOTFOUND" )
+
+if( ${LIB_BIN} STREQUAL "LIB_BIN-NOTFOUND" )
+   message( SEND_ERROR "MSVC libs : lib.exe not found" )
+endif( ${LIB_BIN} STREQUAL "LIB_BIN-NOTFOUND" )	
+
+#
+# Define macro
+# Usage: ADD_MSVC_LIB( target ) 
+#        will generetae libtarget.lib from libtarget.dll
+#
+macro( ADD_MSVC_LIB target )
+      add_custom_command( 
+         OUTPUT ${CMAKE_LIBRARY_OUTPUT_DIRECTORY}/lib${target}.lib
+         COMMAND ${PEXPORTS_BIN} ${CMAKE_LIBRARY_OUTPUT_DIRECTORY}/lib${target}.dll > ${CMAKE_LIBRARY_OUTPUT_DIRECTORY}/lib${target}.def
+         COMMAND ${LIB_BIN} -machine:x86 -name:lib${target}.dll -def:${CMAKE_LIBRARY_OUTPUT_DIRECTORY}/lib${target}.def -out:${CMAKE_LIBRARY_OUTPUT_DIRECTORY}/lib${target}.lib
+         COMMAND rm ${CMAKE_LIBRARY_OUTPUT_DIRECTORY}/lib${target}.def
+         COMMAND rm ${CMAKE_LIBRARY_OUTPUT_DIRECTORY}/lib${target}.exp
+         DEPENDS ${target} )
+      add_custom_target( lib${target}-msvc-lib ALL DEPENDS ${CMAKE_LIBRARY_OUTPUT_DIRECTORY}/lib${target}.lib )
+endmacro( ADD_MSVC_LIB )

@@ -1,0 +1,23 @@
+##
+## In this file GLib-2.0 and GIO-2.0 libraries are checked
+##
+
+# Check for GLIB2
+set( ENV{PKG_CONFIG_PATH} "$ENV{PKG_CONFIG_PATH}:/opt/gtk/lib/pkgconfig" )
+pkg_check_modules( GLIB2 REQUIRED gio-2.0 glib-2.0 gobject-2.0 gmodule-2.0 gthread-2.0 )
+if( NOT GLIB2_FOUND )
+   return()
+endif( NOT GLIB2_FOUND )
+
+#Add compiler flags
+add_definitions( ${GLIB2_CFLAGS} )
+add_definitions( ${GLIB2_CFLAGS_OTHER} )
+
+link_directories( ${GLIB2_LIBRARY_DIRS} )
+
+string(REPLACE "." ";" _glib_version_list ${GLIB2_glib-2.0_VERSION})
+list(GET _glib_version_list 0 GLIB2_TARGET_VERSION_MAJOR)
+list(GET _glib_version_list 1 GLIB2_TARGET_VERSION_MINOR)
+list(GET _glib_version_list 2 GLIB2_TARGET_VERSION_PATCH)
+set(GLIB2_TARGET_VERSION_MAJOR_AND_MINOR "${GLIB2_TARGET_VERSION_MAJOR}.${GLIB2_TARGET_VERSION_MINOR}")
+

@@ -1,0 +1,15 @@
+##
+## In this file GTK+-2.0 libraries are checked
+##
+
+# Check for GTK2
+pkg_check_modules( GTK2 REQUIRED gtk+-2.0 )
+if( NOT GTK2_FOUND )
+   return()
+endif( NOT GTK2_FOUND )
+
+#Add compiler flags
+add_definitions( ${GTK2_CFLAGS} )
+add_definitions( ${GTK2_CFLAGS_OTHER} )
+
+link_directories( ${GTK2_LIBRARY_DIRS} )

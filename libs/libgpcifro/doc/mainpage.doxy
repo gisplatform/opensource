@@ -1,0 +1,20 @@
+/*! \mainpage Библиотека LIBCIFROAREA
+ *
+ * библиотека libcifroarea предназначена для создания унифицированных модулей формирования изображений в
+ * предоставляемую внешним объектом (\link CifroArea \endlink или \link CifroImage \endlink) область памяти.
+ * Эта область памяти имеет параметры соответствующие области рисования, созданной функцией cairo_image_surface_create
+ * библиотеки cairo для формата данных CAIRO_FORMAT_ARGB32.
+ *
+ * - \link IcaRenderer \endlink - интерфейс формирования изображений;
+ * - \link IcaStateRenderer \endlink - класс отслеживания состояния CifroArea и CifroImage;
+ * - \link CifroArea \endlink - GTK+ виджет показа изображений сформированных интерфейсом IcaRenderer;
+ * - \link CifroImage \endlink - библиотека сохранения изображений сформированных интерфейсом IcaRenderer.
+ * .
+ *
+ * Также библиотека включает в себя следующие виджеты построенные с использованием CifroArea:
+ *
+ * - \link CifroScope \endlink - виджет многоканального осциллографа;
+ * - \link CifroCurve \endlink - виджет параметрических кривых.
+ * .
+ *
+*/

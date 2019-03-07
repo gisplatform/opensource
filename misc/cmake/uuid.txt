@@ -1,0 +1,20 @@
+##
+## Provide libuuid support
+##
+
+if( UNIX )
+
+# Check for UUID
+pkg_check_modules( UUID REQUIRED uuid )
+if( NOT UUID_FOUND )
+   return()
+endif( NOT UUID_FOUND )
+
+
+#Add compiler flags
+add_definitions( ${UUID_CFLAGS} )
+add_definitions( ${UUID_CFLAGS_OTHER} )
+
+link_directories( ${UUID_LIBRARY_DIRS} )
+
+endif( UNIX )

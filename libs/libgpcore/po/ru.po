@@ -1,0 +1,299 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GETTEXT_PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-20 09:45+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL ADDRESS>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: Filter.vala
+msgid "<no_name>"
+msgstr "<нет_имени>"
+
+#: Filter.vala
+msgid "<no_hint>"
+msgstr "<пустая_подсказка>"
+
+#: Ladle.vala
+msgid "No data in conncetion."
+msgstr "Нет данных в соединении."
+
+#: Point.vala
+msgid "WGS-84"
+msgstr "WGS-84"
+
+#: Point.vala
+msgid "PZ-90"
+msgstr "ПЗ-90"
+
+#: Point.vala
+msgid "CK-42"
+msgstr "СК-42"
+
+#: Point.vala
+msgid "UTM"
+msgstr "UTM"
+
+#: Point.vala
+msgid "Gauss-Kruger"
+msgstr "Гаусс-Крюгер"
+
+#: Point.vala
+msgid "CK-42 Gauss-Kruger"
+msgstr "СК-42 Гаусс-Крюгер"
+
+#: Point.vala
+msgid "Unknown system"
+msgstr "Неизвестная система"
+
+#: ActivityButton.vala
+msgid "No activities"
+msgstr "Нет активных действий"
+
+#: ActivityButton.vala
+msgid "Cancel"
+msgstr "Отмена"
+
+#: TreeExport.vala
+msgid "Select file export to"
+msgstr "Выберите файл, в который будет осуществлен экспорт"
+
+#: TreeExport.vala
+msgid "_Cancel"
+msgstr "_Отмена"
+
+#: TreeExport.vala
+msgid "_Export"
+msgstr "_Экспорт"
+
+#: TreeExport.vala
+msgid "new_file.txt"
+msgstr "новый_файл.txt"
+
+#: TreeExport.vala
+msgid "File format"
+msgstr "Формат файла"
+
+#: TreeExport.vala
+msgid "Separator between columns: "
+msgstr "Разделитель между колонками: "
+
+#: TreeExport.vala
+msgid "Add columns names"
+msgstr "Добавить имена колонок"
+
+#: TreeExport.vala
+msgid "File already exists, overwrite it?"
+msgstr "Файл уже существует, переписать его?"
+
+#: TreeExport.vala
+msgid "Data has been successfully exported to file "
+msgstr "Данные были успешно экспортированы в файл "
+
+#: TreeExport.vala
+msgid "Export to file"
+msgstr "Экспорт в файл"
+
+#: Palette.vala
+msgid "Custom scale"
+msgstr "Пользовательская шкала"
+
+#: Palette.vala
+msgid "Rainbow scale"
+msgstr "Радужная шкала"
+
+#: Palette.vala
+msgid "Gray scale"
+msgstr "Серая шкала"
+
+#: Palette.vala
+msgid "Bronze scale"
+msgstr "Бронзовая шкала"
+
+#: Palette.vala
+msgid "Use fixed scale"
+msgstr "Фиксированная шкала"
+
+#: Palette.vala
+msgid "Blue scale"
+msgstr "Голубая шкала"
+
+#: Palette.vala
+msgid "Unknown Scale"
+msgstr "Неизвестная шкала"
+
+#: Palette.vala
+msgid "Scale"
+msgstr "Шкала"
+
+#: Palette.vala
+msgid " for "
+msgstr " для "
+
+#: Palette.vala
+msgid "Continuous scale"
+msgstr "Постоянная шкала"
+
+#: Palette.vala
+msgid "Apply"
+msgstr "Применить"
+
+#: Palette.vala
+msgid "Limits"
+msgstr "Пределы"
+
+#: Palette.vala
+msgid "Use auto min-max"
+msgstr "Авто-значения глубины"
+
+#: Palette.vala
+msgid "Select source"
+msgstr "Укажите источник"
+
+#: Palette.vala
+msgid "Color limits (%)"
+msgstr "Границы цвета"
+
+#: Palette.vala
+msgid "Calibration"
+msgstr "Калибровка шкалы"
+
+#: Palette.vala
+msgid "Palette in use"
+msgstr "Используемая палитра"
+
+#: StackFilterBox.vala
+msgid "Auto"
+msgstr "Авто"
+
+#: StackFilterBox.vala
+msgid "Manual"
+msgstr "Вручную"
+
+#: StackFilterBox.vala
+msgid "Add Filter"
+msgstr "Добавить фильтр"
+
+#: Connector.vala landle_client.vala
+msgid "Connect"
+msgstr "Соединить"
+
+#: Connector.vala
+msgid "Bookmark"
+msgstr "Закладка"
+
+#: Connector.vala landle_server.vala
+msgid "Address"
+msgstr "Адрес"
+
+#: Connector.vala
+msgid "Description"
+msgstr "Описание"
+
+#: Connector.vala
+msgid "Found"
+msgstr "Найдено"
+
+#: Connector.vala
+msgid "Recent"
+msgstr "Недавние"
+
+#: Connector.vala
+msgid "Saved"
+msgstr "Сохранено"
+
+#: Connector.vala
+msgid "_Save"
+msgstr "Сохранить"
+
+#: spinner.c
+msgid "Play"
+msgstr "Запустить"
+
+#: spinner.c
+msgid "Stop"
+msgstr "Остановить"
+
+#: landle_client.vala
+msgid "Client"
+msgstr "Клиент"
+
+#: landle_client.vala
+msgid "Conncetion (host address : port):"
+msgstr "Соединение (адрес хоста : порт):"
+
+#: landle_client.vala landle_server.vala
+msgid "Message to send"
+msgstr "Сообщение для отправки"
+
+#: landle_client.vala landle_server.vala
+msgid "compress it"
+msgstr "сжать его"
+
+#: landle_client.vala landle_server.vala
+msgid "Send message"
+msgstr "Отправить сообщение"
+
+#: landle_client.vala landle_server.vala
+msgid "Log of received messages:"
+msgstr "Лог принятых сообщений:"
+
+#: landle_client.vala
+msgid "File with embedded data"
+msgstr "Файл со встроенными данными"
+
+#: landle_client.vala
+msgid "has been created."
+msgstr "был создан."
+
+#: landle_client.vala
+msgid "Open it?"
+msgstr "Открыть его?"
+
+#: landle_client.vala
+msgid "Not connected to server."
+msgstr "Не подсоединены к серверу"
+
+#: landle_client.vala landle_server.vala
+msgid "Received string is not null-terminated"
+msgstr "Принятая строка не содержит нуль-байта"
+
+#: landle_client.vala landle_server.vala
+msgid "Empty message"
+msgstr "Пустое сообщение"
+
+#: landle_server.vala
+msgid "Server"
+msgstr "Сервер"
+
+#: landle_server.vala
+msgid "Port:"
+msgstr "Порт:"
+
+#: landle_server.vala
+msgid "Start/stop server"
+msgstr "Запустить/остановиь сервер"
+
+#: landle_server.vala
+msgid "Connected clients:"
+msgstr "Подключенные клиенты:"
+
+#: landle_server.vala
+msgid "Connection time"
+msgstr "Время установки соединения"
+
+#: landle_server.vala
+#, c-format
+msgid "Client '%s' disconnected with error: %s"
+msgstr "Клиент '%s' отсоединился с ошибкой: %s"
+
+#~ msgid "Open Toolbar"
+#~ msgstr "Открыть панель инструментов"
+
+#~ msgid "Close Toolbar"
+#~ msgstr "Закрыть панель инструментов"

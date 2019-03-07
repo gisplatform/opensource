@@ -1,0 +1,16 @@
+##
+## In this file GTK+-3.0 libraries are checked
+##
+
+# Check for GTK3
+set( ENV{PKG_CONFIG_PATH} "/opt/gtk/lib/pkgconfig:$ENV{PKG_CONFIG_PATH}" )
+pkg_check_modules( GTK3 REQUIRED gtk+-3.0 )
+if( NOT GTK3_FOUND )
+   return()
+endif( NOT GTK3_FOUND )
+
+#Add compiler flags
+add_definitions( ${GTK3_CFLAGS} )
+add_definitions( ${GTK3_CFLAGS_OTHER} )
+
+link_directories( ${GTK3_LIBRARY_DIRS} )

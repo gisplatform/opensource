@@ -1,0 +1,26 @@
+##
+## Define REQUIRE_LIBRARY macro.
+##
+## Check for library ${libname}.
+## Send error if library doesn`t exist and ${fatal} is set.
+## Set LIB${var_libname}_LIBRARIES to ${libname}.
+##
+
+macro( REQUIRE_LIBRARY var_libname libname fatal )
+   string( TOUPPER ${var_libname} var_libname_uc )
+   message( STATUS "checking for library ${libname}" )
+
+   find_library( LIB${var_libname_uc} ${libname} )
+
+   if( "${LIB${var_libname_uc}}" STREQUAL "LIB${var_libname_uc}-NOTFOUND" )
+   if( ${fatal} )
+      message( SEND_ERROR "can`t find library ${libname}" )
+      return()
+   else( ${fatal} )
+      message( STATUS "can`t find library ${libname}" )
+   endif( ${fatal} )
+   else( "${LIB${var_libname_uc}}" STREQUAL "LIB${var_libname_uc}-NOTFOUND" )
+      message( STATUS "checking for library ${libname} - ${LIB${var_libname_uc}}" )
+      set( LIB${var_libname}_LIBRARIES "${libname}" )
+   endif( "${LIB${var_libname_uc}}" STREQUAL "LIB${var_libname_uc}-NOTFOUND" )
+endmacro( REQUIRE_LIBRARY )

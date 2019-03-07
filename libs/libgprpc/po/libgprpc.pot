@@ -1,0 +1,229 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-09 08:55+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: gp-rpc-common.c
+msgid "Wrong RPC header size"
+msgstr ""
+
+#: gp-rpc-common.c
+msgid "Unknown RPC packet"
+msgstr ""
+
+#: gp-rpc-common.c
+msgid "Wrong RPC data size"
+msgstr ""
+
+#: gp-rpc-common.c
+msgid "RPC sequence mismatch"
+msgstr ""
+
+#: gp-rpc-common.c
+msgid "received"
+msgstr ""
+
+#: gp-rpc-common.c
+msgid "needed"
+msgstr ""
+
+#: gp-rpc-common.c
+msgid "RPC data buffer error"
+msgstr ""
+
+#: gp-rpc-common.c
+msgid "PRPC version mismatch"
+msgstr ""
+
+#: gp-rpc-common.c
+msgid "client version"
+msgstr ""
+
+#: gp-rpc-common.c
+msgid "server version"
+msgstr ""
+
+#: gp-rpc-common.c
+msgid "RPC authentication method not supported"
+msgstr ""
+
+#: gp-rpc-common.c
+msgid "RPC client was not authenticated"
+msgstr ""
+
+#: gp-rpc-common.c
+msgid "RPC Access denied"
+msgstr ""
+
+#: gp-rpc-common.c
+msgid "Unknown RPC procedure"
+msgstr ""
+
+#: gp-rpc-common.c
+msgid "Unknown RPC object"
+msgstr ""
+
+#: gp-rpc-server.c
+#: gp-rpc.c
+msgid "Failed to determine protocol from URI."
+msgstr ""
+
+#: srpc-server.c
+#: trpc-server.c
+#: urpc-server.c
+msgid "Internal RPC auth parameter error."
+msgstr ""
+
+#: srpc-server.c
+#: trpc-server.c
+#: urpc-server.c
+msgid "Internal RPC manager parameter error."
+msgstr ""
+
+#: srpc-server.c
+#: trpc-server.c
+#: urpc-server.c
+msgid "Failed to find protocol name in URI."
+msgstr ""
+
+#: srpc-server.c
+msgid "Failed to create RPC control object."
+msgstr ""
+
+#: srpc-server.c
+#: trpc-server.c
+#: urpc-server.c
+msgid "Failed to create RPC server: "
+msgstr ""
+
+#: srpc.c
+msgid "Failed to create RPC client"
+msgstr ""
+
+#: srpc.c
+msgid "RPC stop semaphore error."
+msgstr ""
+
+#: srpc.c
+#: trpc.c
+#: urpc.c
+msgid "Check of RPC header failed: "
+msgstr ""
+
+#: srpc.c
+#: trpc.c
+#: urpc.c
+msgid "RPC client is not connected."
+msgstr ""
+
+#: srpc.c
+#: trpc.c
+#: urpc.c
+msgid "Can't authenticate."
+msgstr ""
+
+#: srpc.c
+#: trpc.c
+#: urpc.c
+msgid "Can't execute RPC request: "
+msgstr ""
+
+#: srpc.c
+#: trpc.c
+#: urpc.c
+msgid "Authentication failed."
+msgstr ""
+
+#: trpc-server.c
+#: trpc-server.c
+#: urpc-server.c
+msgid "Failed to get IP port from URI."
+msgstr ""
+
+#: trpc-server.c
+msgid "RPC control thread failed."
+msgstr ""
+
+#: trpc.c
+#: urpc.c
+msgid "Wrong internal auth object."
+msgstr ""
+
+#: trpc.c
+msgid "URI type is not TCP."
+msgstr ""
+
+#: trpc.c
+#: urpc.c
+msgid "Fail to get address and port from URI."
+msgstr ""
+
+#: trpc.c
+#: urpc.c
+msgid "Failed to lock RPC."
+msgstr ""
+
+#: trpc.c
+#: trpc.c
+#: urpc.c
+#: urpc.c
+msgid "Authentication required."
+msgstr ""
+
+#: trpc.c
+msgid "Failed to send RPC data: "
+msgstr ""
+
+#: trpc.c
+msgid "RPC data send timeout."
+msgstr ""
+
+#: trpc.c
+msgid "Failed to receive RPC header: "
+msgstr ""
+
+#: trpc.c
+msgid "RPC header receive timeout."
+msgstr ""
+
+#: trpc.c
+msgid "RPC response too large."
+msgstr ""
+
+#: trpc.c
+msgid "Failed to receive RPC data: "
+msgstr ""
+
+#: trpc.c
+msgid "RPC data receive timeout."
+msgstr ""
+
+#: urpc-server.c
+msgid "Failed to get IP address from URI."
+msgstr ""
+
+#: urpc.c
+msgid "URI type is not UDP."
+msgstr ""
+
+#: urpc.c
+msgid "Socket send failed: "
+msgstr ""
+
+#: urpc.c
+msgid "Socket receive failed: "
+msgstr ""

@@ -1,0 +1,16 @@
+##
+## In this file GIO-Unix-2.0 library is checked
+##
+
+# Check for GIO-Unix-2.0
+set( ENV{PKG_CONFIG_PATH} "$ENV{PKG_CONFIG_PATH}:/opt/gtk/lib/pkgconfig" )
+pkg_check_modules( GIO_UNIX REQUIRED gio-unix-2.0 )
+if( NOT GIO_UNIX_FOUND )
+   return()
+endif( NOT GIO_UNIX_FOUND )
+
+#Add compiler flags
+add_definitions( ${GIO_UNIX_CFLAGS} )
+add_definitions( ${GIO_UNIX_CFLAGS_OTHER} )
+
+link_directories( ${GIO_UNIX_LIBRARY_DIRS} )

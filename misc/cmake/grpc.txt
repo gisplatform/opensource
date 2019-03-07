@@ -1,0 +1,13 @@
+##
+## In this file GP_RPC library is checked
+##
+
+#
+# Grpc library path: external or auto selected.
+if( GPRPC_DIR )
+   include_directories( GPRPC_DIR/inc )
+   link_directories( GPRPC_DIR/bin )
+else( GPRPC_DIR )
+   include_directories( ${CMAKE_CURRENT_SOURCE_DIR}/../libgprpc/inc )
+   link_directories( ${CMAKE_CURRENT_SOURCE_DIR}/../libgprpc/bin )
+endif( GPRPC_DIR )

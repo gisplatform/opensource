@@ -1,0 +1,8 @@
+##
+## Export symbols from binary for GtkBuilder
+##
+
+if( WIN32 )
+  set( CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -export-all-symbols" )
+  set( CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -export-all-symbols" )
+endif( WIN32 )

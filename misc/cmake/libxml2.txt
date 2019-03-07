@@ -1,0 +1,16 @@
+##
+## Provide libxml2 support
+##
+
+# Check for LIBXML2
+pkg_check_modules( LIBXML2 REQUIRED libxml-2.0 )
+if( NOT LIBXML2_FOUND )
+   return()
+endif( NOT LIBXML2_FOUND )
+
+
+#Add compiler flags
+add_definitions( ${LIBXML2_CFLAGS} )
+add_definitions( ${LIBXML2_CFLAGS_OTHER} )
+
+link_directories( ${LIBXML2_LIBRARY_DIRS} )

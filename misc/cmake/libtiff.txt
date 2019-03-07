@@ -1,0 +1,5 @@
+##
+## Provide libtiff support
+##
+
+REQUIRE_LIBRARY( TIFF tiff 1 )

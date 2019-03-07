@@ -1,0 +1,26 @@
+##
+## Provide libfftw3 support (if _use_mkl commented out) or
+## provide MKL support (if _use_mkl defined)
+##
+
+set(_use_mkl "TRUE")
+
+if(_use_mkl)
+  if(DUALIT_INTEL_32BIT)
+    link_directories(${PROJECT_SOURCE_DIR}/../../libs/mkl/lib32)
+  elseif(DUALIT_INTEL_64BIT)
+    link_directories(${PROJECT_SOURCE_DIR}/../../libs/mkl/lib)
+  endif()
+
+  include_directories(${PROJECT_SOURCE_DIR}/../../libs/mkl/include/fftw)
+  set(LIBFFTW3_LIBRARIES mkl_core mkl_sequential)
+
+  if(WIN32)
+    set(LIBFFTW3_LIBRARIES ${LIBFFTW3_LIBRARIES} mkl_intel_dll BufferOverflowU gshandler)
+  else(WIN32)
+    set(LIBFFTW3_LIBRARIES ${LIBFFTW3_LIBRARIES} mkl_intel)
+  endif(WIN32)
+else(_use_mkl)
+  REQUIRE_LIBRARY(FFTW3_THREADS fftw3_threads 0)
+  REQUIRE_LIBRARY(FFTW3 fftw3 0)
+endif(_use_mkl)

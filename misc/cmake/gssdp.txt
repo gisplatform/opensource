@@ -1,0 +1,15 @@
+##
+## Provide gssdp-1.0 support
+##
+
+# Check for GSSDP
+pkg_check_modules(GSSDP REQUIRED gssdp-1.0)
+if(NOT GSSDP_FOUND)
+   return()
+endif(NOT GSSDP_FOUND)
+
+#Add compiler flags
+add_definitions(${GSSDP_CFLAGS})
+add_definitions(${GSSDP_CFLAGS_OTHER})
+link_directories(${GSSDP_LIBRARY_DIRS})
+

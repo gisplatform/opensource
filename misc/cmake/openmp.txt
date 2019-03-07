@@ -1,0 +1,12 @@
+##
+## Provide OpenMP support
+##
+
+if( NOT DEFINED DISABLE_OPENMP )
+
+  set( CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -fopenmp" )
+  set( CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -fopenmp" )
+  add_definitions( -DUSE_OPENMP )
+  set( OPENMP_LIBRARIES "gomp" )
+
+endif( NOT DEFINED DISABLE_OPENMP )

@@ -1,0 +1,16 @@
+##
+## Provide build components of libaquadb support
+##
+
+# Comment this line to disable AquaFDB
+set( AQUAFDB_BUILD TRUE )
+
+# Comment this line to disable AquaXTF
+set( AQUAXTF_BUILD TRUE )
+
+# Comment this line to disable AquaMEM
+set( AQUAMEM_BUILD TRUE )
+
+add_definitions( -DAQUAFDB_BUILD=${AQUAFDB_BUILD} )
+add_definitions( -DAQUAXTF_BUILD=${AQUAXTF_BUILD} )
+add_definitions( -DAQUAMEM_BUILD=${AQUAMEM_BUILD} )

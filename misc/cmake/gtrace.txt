@@ -1,0 +1,13 @@
+##
+## In this file gtrace library is checked
+##
+
+#
+# gtrace library path: external or auto selected.
+if( GTRACE_DIR )
+   include_directories( GTRACE_DIR/inc )
+   link_directories( GTRACE_DIR/bin )
+else( GTRACE_DIR )
+   include_directories( ${CMAKE_CURRENT_SOURCE_DIR}/../gtrace/inc )
+   link_directories( ${CMAKE_CURRENT_SOURCE_DIR}/../gtrace/bin )
+endif( GTRACE_DIR )
