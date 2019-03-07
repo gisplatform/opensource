@@ -1,0 +1,7 @@
+libs/girepository/
+libs/include/
+libs/libgp*/bin/
+libs/libgp*/build/
+libs/libgp*/share
+share/
+
