@@ -36,6 +36,12 @@ cmake .. && make
 ```
 ![Chat demo](/images/landle.png)
 
+## List of net interfaces
+
+```bash
+../libs/libgpnein/bin/nein_test
+```
+
 ## Menu tree widget demo
 
 ```bash
