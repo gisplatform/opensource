@@ -1,32 +1,47 @@
 # Install dependencies (Ubuntu/Debian)
 
- sudo apt install libgtk-3-dev valac libgeotiff-dev gobject-introspection libgirepository1.0-dev libpulse-dev
+```bash
+sudo apt install libgtk-3-dev valac libgeotiff-dev gobject-introspection libgirepository1.0-dev libpulse-dev
+```
 
 # Build
 
- mkdir build
- cd build
- cmake .. && make
+```bash
+mkdir build
+cd build
+cmake .. && make
+```
 
 # Demos
 
 ## Tiles demo
 
- ../libs/libgpstapler/bin/staplertest
+```bash
+../libs/libgpstapler/bin/staplertest
+```
 
 ## Sound demo
 
- ../libs/libgpcore/bin/rumorista
+```bash
+../libs/libgpcore/bin/rumorista
+```
 
 ## Text transfer client-server demo (chat-like)
 
- ../libs/libgpcore/bin/landle_server &
+```bash
+../libs/libgpcore/bin/landle_server &
+../libs/libgpcore/bin/landle_client
+```
 
 ## Menu tree widget demo
 
- ../libs/libgpcore/bin/menu_tree_test
+```bash
+../libs/libgpcore/bin/menu_tree_test
+```
 
 # Run tests
 
- make test
+```bash
+make test
+```
 
