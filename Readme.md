@@ -19,6 +19,8 @@ cmake .. && make
 ```bash
 ../libs/libgpstapler/bin/staplertest
 ```
+![Tiles demo](/images/stapler.png)
+
 
 ## Sound demo
 
@@ -32,6 +34,7 @@ cmake .. && make
 ../libs/libgpcore/bin/landle_server &
 ../libs/libgpcore/bin/landle_client
 ```
+![Chat demo](/images/landle.png)
 
 ## Menu tree widget demo
 
